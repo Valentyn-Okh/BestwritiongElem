@@ -1,0 +1,86 @@
+.get-fluid{
+    background-color: var(--color_btn_read_more);
+    height: 290px;
+    background-image: url(../../images/Bg1-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    padding-bottom: 20px;
+}
+
+.get-fluid .get .box .order{
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+    background-color: #caddea;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.get-fluid .get .box .order p{
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #075da2;
+    font-weight: 400;
+    font-family: Roboto_Medium;
+}
+
+.get-fluid .get .box .order span{
+    font-size: 35px;
+    color: #dd0000;
+}
+
+.get-fluid .get .box .total p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-top: 30px;
+    width: 310px;
+}
+
+.get-fluid .get .box .total p span{
+    font-size: 48px;
+    line-height: 45px;
+}
+
+.order_now .btn_order{
+    width: 310px;
+    height: 35px;
+    background-color: var(--color_btn_order_now);
+    border: none;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-top: 40px;
+}
+
+.order_now .btn_order:hover{
+    background-color: var(--color_btn_order_now_hover);
+}
+
+.select{
+    width: 310px;
+    height: 35px;
+    background-color: #caddea;
+    border: none;
+    font-size: 25px;
+    line-height: 31px;
+    color: #1b7fd0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-top: 10px;
+}

@@ -1,0 +1,64 @@
+.company-fluid{
+    background-image: url(../../images/main_bg_img_heder.png);
+    height: 590px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 25px;
+}
+
+.company-fluid .company .row .col-6 h1{
+    width: 600px;
+    height: 90px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #caddea;
+}
+
+.company-fluid .company h3{
+    width: 532px;
+    height: 22px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color_h3);
+    font-weight: 500;
+    font-family: Roboto_Medium;
+    margin-left: 50px;
+}
+
+.company-fluid .company .row .col-6 img{
+    margin-top: 40px;
+}
+
+.company-fluid .company .row .col-6 ul{
+    padding: 0;
+    margin-left: 50px;
+}
+
+.company-fluid .company .row .col-6 ul li{
+    font-size: 18px;
+    line-height: 33px;
+    color: var(--color_h3);
+    font-family: "Arial Narrow";
+}
+
+.company-fluid .company .row .col-6 .btn{
+    width: 230px;
+    height: 35px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #0983e5;
+    font-size: 18px;
+    color: var(--color_main_1);
+    font-weight: 400;
+    font-family: Roboto_Medium;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.company-fluid .company .row .col-6 .btn:hover{
+    background-color: var(--color_main_1);
+    color: var(--color_btn_text);
+}
+
+.company-fluid .company .row .col-6 .btn1{
+    margin-left: 50px;
+}
