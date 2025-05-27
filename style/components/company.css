@@ -1,7 +1,11 @@
 .company-fluid{
+    background-color: #e3ebf3;
+}
+
+.company{
     background-image: url(../../images/main_bg_img_heder.png);
     height: 590px;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 25px;
@@ -9,19 +13,25 @@
 
 .company-fluid .company .row .col-6 h1{
     width: 600px;
-    height: 90px;
+    height: 60px;
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    background-color: #caddea;
+    background-color: var(--color_btn_send_message_hover);
+    margin-bottom: 50px;
+}
+
+.company-fluid .company .row .col-6 h1::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid var(--color_btn_send_message_hover);
+    border-right: 30px solid transparent;
+    position: relative;
+    top: 44px;
+    right: 66px;
 }
 
 .company-fluid .company h3{
-    width: 532px;
-    height: 22px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: var(--color_h3);
     font-weight: 500;
-    font-family: Roboto_Medium;
     margin-left: 50px;
 }
 
@@ -41,6 +51,10 @@
     font-family: "Arial Narrow";
 }
 
+.company-fluid .company .row .col-6 ul li::marker{
+    color: var(--color_main_1);
+}
+
 .company-fluid .company .row .col-6 .btn{
     width: 230px;
     height: 35px;
@@ -57,6 +71,7 @@
 .company-fluid .company .row .col-6 .btn:hover{
     background-color: var(--color_main_1);
     color: var(--color_btn_text);
+    cursor: pointer;
 }
 
 .company-fluid .company .row .col-6 .btn1{

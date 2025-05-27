@@ -9,11 +9,22 @@
 }
 
 .get-fluid .get .box .order{
-    height: 65px;
+    height: 50px;
     filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
     background-color: #caddea;
     margin-top: 30px;
     margin-bottom: 25px;
+}
+
+.get-fluid .get .box .order::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_send_message_hover);
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 50px;
+    left: 0px;
 }
 
 .get-fluid .get .box .order p{
@@ -58,8 +69,25 @@
     margin-top: 40px;
 }
 
+.order_now .btn_order::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_order_now);
+    border-right: 20px solid transparent;
+    position: relative;
+    top: 53px;
+    right: 71px;
+}
+
 .order_now .btn_order:hover{
     background-color: var(--color_btn_order_now_hover);
+    cursor: pointer;
+}
+
+.order_now .btn_order:hover::before{
+    border-top: 20px solid var(--color_btn_order_now_hover);
+    border-right: 20px solid transparent;
 }
 
 .select{
