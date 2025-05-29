@@ -1,0 +1,133 @@
+.essay-fluid{
+    background-image: url(../../images/Bg1.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #f4f6fa;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.essay-fluid .essay h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: var(--color_btn_send_message_hover);
+}
+
+.essay-fluid .essay h2::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_send_message_hover);
+    border-right: 20px solid transparent;
+    position: relative;
+    top: 35px;
+    right: 205px;
+}
+
+.essay-fluid .essay p{
+    font-size: 18px;
+    font-family: "Arial Narrow";
+    color: var(--color_p_text);
+    margin-top: 40px;
+}
+
+.essay-fluid .essay .box1 .elements::before{
+    content: '';
+    display: none;
+    height: 312px;
+    width: 312px;
+    background-image: url(../../images/Element1_dark.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10px;
+}
+
+.essay-fluid .essay .box1 .elements:hover::before{
+    display: block;
+}
+
+.essay-fluid .essay .box1 .elements h4{
+    text-align: center;
+}
+
+.essay-fluid .essay .box1 .elements .elpar{
+    font-size: 16px;
+    font-family: "Arial Narrow";
+    color: var(--color_p_text);
+}
+
+.essay-fluid .essay .box1 .elements .elem-btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.essay-fluid .essay .box1 .elements .elem-btn0{
+    margin-top: 170px;
+}
+
+.essay-fluid .essay .box1 .elements1 .elem-btn1{
+    margin-top: 80px;
+}
+
+.essay-fluid .essay .box1 .elements3 .elem-btn3{
+    margin-top: 140px;
+}
+
+.essay-fluid .essay .box1 .elements .elem-btn button{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: Roboto_Medium;
+    color: var(--color_btn_text);
+    background-color: #075da1;
+    border: none;
+    cursor: pointer;
+}
+
+.essay-fluid .essay .box1 .elements:hover{
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.essay-fluid .essay .box1 .elements::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid #ffffff;
+    border-right: 50px solid transparent;
+    position: relative;
+    top: 48px;
+    left: -11.5px;
+    display: none;
+}
+
+.essay-fluid .essay .box1 .elements:hover::after{
+    display: inline-block;
+}
+
+.essay-fluid .essay .box1 .elements1::before{
+    background-image: url(../../images/Element2_dark.svg);
+}
+
+.essay-fluid .essay .box1 .elements2::before{
+    background-image: url(../../images/Element3_dark.svg);
+}
+
+.essay-fluid .essay .box1 .elements2 ul, .elements3 ul{
+    padding-left: 17px;
+}
+
+
+.essay-fluid .essay .box1 .elements2 ul li, .elements3 ul li{
+    font-family: "Arial Narrow";
+}
+
+.essay-fluid .essay .box1 .elements3::before{
+    background-image: url(../../images/Element4_dark.svg);
+}

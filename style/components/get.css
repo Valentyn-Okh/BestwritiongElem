@@ -27,6 +27,16 @@
     left: 0px;
 }
 
+.get-fluid .get .box .order::after{
+    content: "";
+    width: 25px;
+    height: 50px;
+    background-image: url(../../images/Arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 370px;
+}
+
 .get-fluid .get .box .order p{
     font-size: 22px;
     line-height: 20px;
