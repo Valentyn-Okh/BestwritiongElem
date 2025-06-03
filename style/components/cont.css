@@ -1,0 +1,45 @@
+.cont-fluid{
+    background-color: var(--color_btn_read_more_hover);
+    position: relative;
+}
+
+.cont-fluid .cont .card img{
+    width: 70px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.cont-fluid .cont .massager img{
+    width: 50px;
+    height: 50px;
+}
+
+.cont-fluid .cont .massager .face::before{
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-image: url(../../images/Facebook2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 321px;
+    display: none;
+}
+
+.cont-fluid .cont .massager .face:hover::before{
+    display: flex;
+}
+
+.cont-fluid .cont .massager .twit::before{
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-image: url(../../images/Twiter2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    display: none;
+}
+
+.cont-fluid .cont .massager .twit:hover::before{
+    display: flex;
+}

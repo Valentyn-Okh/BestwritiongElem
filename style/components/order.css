@@ -1,0 +1,77 @@
+.order-fluid{
+    background-color: var(--color_main_1);
+    background-image: url(../../images/Bg2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.order-fluid .order h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+    background-color: var(--color_btn_send_message_hover);
+}
+
+.order-fluid .order h2::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_send_message_hover);
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.order-fluid .order p{
+    font-size: 24px;
+    color: #e9f7fe;
+    font-family: "Arial Narrow";
+    text-align: center;
+}
+
+.order-fluid .order .sections .orderbox{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.order-fluid .order .sections .orderbox .number{
+    background-color: var(--color_btn_text);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--color_btn_send_message);
+    font-weight: 700;
+    font-family: Roboto_Medium;
+}
+
+.order-fluid .order .sections .orderbox .box-text{
+    font-size: 22px;
+    width: 255px;
+    color: var(--color_btn_text);
+    font-family: "Arial Narrow";
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color_btn_text);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .order-fluid .order h2{
+        height: 70px;
+    }
+
+    .order-fluid .order h2::before{
+        top: 69px;
+        left: 0px;
+    }
+}

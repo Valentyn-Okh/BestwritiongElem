@@ -1,0 +1,133 @@
+footer{
+    background-color: var(--color_main_2);
+    background-image: url(../../images/Bg1-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .foot .foot_text ul{
+    list-style-type: none;
+}
+
+footer .foot .foot_text ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #caddea;
+    font-family: "Arial Narrow";
+}
+
+footer .foot .foot-hr{
+    height: 2px;
+    background-color: #caddea;
+    margin-bottom: 40px;
+}
+
+footer .foot .circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #caddea;
+    position: relative;
+    top: -60px;
+    left: 50%;
+}
+
+footer .foot .circle .vertic{
+    width: 5px;
+    height: 20px;
+    background-color: #164870;
+}
+
+footer .foot .circle .horis{
+    width: 20px;
+    height: 5px;
+    background-color: #164870;
+    position: absolute;
+}
+
+footer .foot .list{
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+footer .foot .list li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    font-weight: 500;
+    font-family: Roboto_Regular;
+    text-decoration: none;
+    padding: 8px 20px;
+    position: relative;
+    &:hover{
+        background-color: var(--color_btn_send_message_hover);
+        color: var(--color_btn_text_hover);
+        box-shadow: -6px 0px 0px var(--color_btn_send_message_hover), 
+                     6px 0px 0px var(--color_btn_send_message_hover);
+        z-index: 1;             
+    }
+}
+
+footer .foot ul .border-li::after{
+    content: "";
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+footer .foot .end{
+    text-align: center;
+    font-size: 16px;
+    color: #caddea;
+    font-family: "Arial Narrow";
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    footer .foot .list li a{
+        padding: 8px 12px;
+         &:hover{
+            box-shadow: -4px 0px 0px var(--color_btn_send_message_hover), 
+                        4px 0px 0px var(--color_btn_send_message_hover);         
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    footer .foot .foot_text ul{
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    footer .foot .list{
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .foot .hmob a{
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: Roboto_Medium;
+    }
+
+    footer .foot .end{
+        text-align: start;
+    }
+
+    footer .foot .end span {
+        margin-left: 10px;
+    }
+
+    footer .foot .end::after{
+        content: "";
+        border: 1px solid #fff;
+        border-radius: 3px;
+        position: relative;
+        right: 95px;
+    }
+}

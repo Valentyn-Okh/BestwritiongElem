@@ -35,15 +35,24 @@
     margin-top: 40px;
 }
 
+.essay-fluid .essay .box1 .elements .image{
+    text-align: center;
+}
+
+.essay-fluid .essay .box1 .elements .image img{
+    width: 200px;
+    height: 200px;
+}
+
 .essay-fluid .essay .box1 .elements::before{
     content: '';
     display: none;
-    height: 312px;
-    width: 312px;
+    height: 200px;
+    width: 200px;
     background-image: url(../../images/Element1_dark.svg);
     background-repeat: no-repeat;
     position: absolute;
-    left: 10px;
+    right: 70px;
 }
 
 .essay-fluid .essay .box1 .elements:hover::before{
@@ -130,4 +139,212 @@
 
 .essay-fluid .essay .box1 .elements3::before{
     background-image: url(../../images/Element4_dark.svg);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .essay-fluid .essay h2::before{
+        left: -115px;
+    }
+    .essay-fluid .essay .box1 .elements::before{
+        right: 48px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .essay-fluid .essay h2::before{
+        left: -25px;
+    }
+    .essay-fluid .essay .box1 .elements2, .elements3{
+        margin-top: 30px;
+    }
+    .essay-fluid .essay .box1 .elements .elem-btn0{
+        margin-top: 135px;
+    }
+    .essay-fluid .essay .box1 .elements::before{
+        right: 145px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .essay-fluid .essay h2::before{
+        top: 45px;
+        right: 0px;
+    }
+    .essay-fluid .essay h2{
+        height: 70px;
+    }
+
+    .essay-fluid .essay .img_mobile img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile{
+        position: relative;
+        padding: 30px 10px 10px 10px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile::before{
+        content: '';
+        display: none;
+        height: 100px;
+        width: 100px;
+        background-image: url(../../images/Element1_dark.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 28px;
+        left: 10px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile h4, .elem-btn{
+        text-align: center;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile{
+        position: absolute;
+        width: 520px;
+        display: none;
+        margin-top: 40px;
+        filter: drop-shadow(2px 3.464px 3.5px rgba(167,192,200,0.75));
+        background-color: #ffffff;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile1{
+        left: -113px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile2{
+        left: -235px;
+    }
+    
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile3{
+        left: -350px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 30px solid #ffffff;
+        position: absolute;
+        top: -28px;
+        left: 25px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile1::before{
+        left: 150px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile2::before{
+        left: 270px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile3::before{
+        left: 385px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile .elem-btn button{
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: Roboto_Medium;
+        color: var(--color_btn_text);
+        background-color: #075da1;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile:hover{
+        height: 450px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile:hover .hover_mobile{
+        display: block;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile1::before{
+        background-image: url(../../images/Element2_dark.svg);
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile2::before{
+        background-image: url(../../images/Element3_dark.svg);
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile3::before{
+        background-image: url(../../images/Element4_dark.svg);
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile:hover::before{
+        display: inline-block;
+    }
+
+    .essay-fluid .essay .img_mobile .hover_mobile{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .essay-fluid .essay h2::before{
+        top: 55px;
+    }
+
+    .essay-fluid .essay h2{
+        height: 95px;
+    }
+
+    .essay-fluid .essay .img_mobile img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile::before{
+        height: 60px;
+        width: 60px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile{
+        position: absolute;
+        width: 320px;
+        display: none;
+        margin-top: 40px;
+        filter: drop-shadow(2px 3.464px 3.5px rgba(167,192,200,0.75));
+        background-color: #ffffff;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile1{
+        left: -75px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile2{
+        left: -155px;
+    }
+    
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile3{
+        left: -230px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile:hover{
+        height: 500px;
+    }
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile::before{
+        left: 5px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile1::before{
+        left: 90px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile2::before{
+        left: 170px;
+    }
+
+    .essay-fluid .essay .img_mobile .image_mobile .hover_mobile3::before{
+        left: 245px;
+    }
+
 }

@@ -1,0 +1,231 @@
+.works-fluid{
+    background-image: url(../../images/Bg1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #f4f6fa;
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+.works-fluid .works h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: var(--color_btn_send_message_hover);
+}
+
+.works-fluid .works h2::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_send_message_hover);
+    border-right: 20px solid transparent;
+    position: relative;
+    top: 35px;
+    left: -550px;
+}
+
+.works-fluid .works .worksbox .workstext{
+    height: 60px;
+    position: relative;
+}
+
+.works-fluid .works .worksbox .workstext:hover h4{
+    background-color: #075da2;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.works-fluid .works .worksbox .workstext h4{
+    line-height: 22px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color_btn_read_more_hover);
+    margin-left: 27px;
+}
+
+.works-fluid .works .worksbox .workstext h4 span{
+    font-size: 59px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: var(--color_btn_read_more_hover);
+    font-weight: 700;
+    font-family: "Rajdhani";
+    margin-right: 23px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1{
+    font-size: 18px;
+    font-family: "Arial Narrow";
+    width: 460px;
+    height: 340px;
+    background-color: #ffffff;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    position: absolute;
+    left: 772px;
+    top: 23px;
+    padding: 10px 40px;
+    display: none;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-1{
+    top: -40px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-2{
+    top: -95px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-3{
+    top: -155px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-4{
+    top: -215px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-5{
+    top: -275px;
+}
+
+.works-fluid .works .worksbox .workstext:hover .hover1{
+    display: block;
+}
+
+.works-fluid .works .worksbox .workstext .hover1::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-left: 30px solid #075da2;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-1::before{
+    top: 64px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-2::before{
+    top: 120px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-3::before{
+    top: 180px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-4::before{
+    top: 240px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1-5::before{
+    top: 300px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1 .imgworks{
+    text-align: center;
+}
+
+.works-fluid .works .worksbox .workstext .hover1 .imgworks img{
+    height: 100px;
+    width: 100px;
+}
+
+.works-fluid .works .worksbox .workstext .hover1 h5{
+    font-size: 18px;
+    line-height: 18px;
+    color: #0983e5;
+    font-family: "Arial Narrow";
+    text-align: center;
+}
+
+.works-fluid .works .works-btn{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.works-fluid .works .works-btn button{
+    width: 310px;
+    height: 35px;
+    background-color: var(--color_btn_order_now);
+    border: none;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-top: 40px;
+}
+
+.works-fluid .works .works-btn button::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid var(--color_btn_order_now);
+    border-right: 20px solid transparent;
+    position: relative;
+    top: 53px;
+    right: 71px;
+}
+
+.works-fluid .works .works-btn button:hover{
+    background-color: var(--color_btn_order_now_hover);
+    cursor: pointer;
+}
+
+.works-fluid .works .works-btn button:hover::before{
+    border-top: 20px solid var(--color_btn_order_now_hover);
+    border-right: 20px solid transparent;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .works-fluid .works h2::before{
+        left: -460px;
+    }
+
+    .works-fluid .works .worksbox .workstext .hover1{
+        width: 400px;
+        left: 665px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .works-fluid .works h2::before{
+        left: -371px;
+    }
+
+    .works-fluid .works .worksbox .workstext .hover1{
+        width: 320px;
+        left: 561px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .works-fluid .works h2::before{
+        left: -250px;
+    }
+
+    .works-fluid .works .worksbox .workstext:hover{
+        height: 450px;
+    }
+
+    .works-fluid .works .worksbox .workstext .hover1{
+        left: 100px;
+        top: 80px;
+        display: none;
+        padding-top: 40px;
+    }
+
+    .works-fluid .works .worksbox .workstext .hover1::before{
+        border-left: 30px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid #075da2;
+        top: -5px;
+        left: 45%;
+    }
+}

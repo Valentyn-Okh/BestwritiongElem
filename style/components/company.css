@@ -4,14 +4,13 @@
 
 .company{
     background-image: url(../../images/main_bg_img_heder.png);
-    height: 590px;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 25px;
 }
 
-.company-fluid .company .row .col-6 h1{
+.company-fluid .company .row .col-xl-6 h1{
     width: 600px;
     height: 60px;
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
@@ -19,7 +18,7 @@
     margin-bottom: 50px;
 }
 
-.company-fluid .company .row .col-6 h1::before{
+.company-fluid .company .row .col-xl-6 h1::before{
     content: "";
     width: 0px;
     height: 0px;
@@ -35,45 +34,133 @@
     margin-left: 50px;
 }
 
-.company-fluid .company .row .col-6 img{
+.company-fluid .company .row .col-xl-6 img{
     margin-top: 40px;
 }
 
-.company-fluid .company .row .col-6 ul{
+.company-fluid .company .row .col-xl-6 ul{
     padding: 0;
     margin-left: 50px;
 }
 
-.company-fluid .company .row .col-6 ul li{
+.company-fluid .company .row .col-xl-6 ul li{
     font-size: 18px;
     line-height: 33px;
     color: var(--color_h3);
     font-family: "Arial Narrow";
 }
 
-.company-fluid .company .row .col-6 ul li::marker{
+.company-fluid .company .row .col-xl-6 ul li::marker{
     color: var(--color_main_1);
 }
 
-.company-fluid .company .row .col-6 .btn{
+.company-fluid .company .row .col-xl-6 .btn a{
     width: 230px;
     height: 35px;
-    background-color: rgba(0,0,0,0);
-    border: 1px solid #0983e5;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color_main_1);
-    font-weight: 400;
-    font-family: Roboto_Medium;
-    margin-right: 30px;
-    margin-bottom: 15px;
+    font-family: Roboto_Regular;
+    text-decoration: none;
+    border: 1px solid #0983e5;
+    margin-bottom: 20px;
 }
 
-.company-fluid .company .row .col-6 .btn:hover{
+
+.company-fluid .company .row .col-xl-6 .btn:hover a{
     background-color: var(--color_main_1);
     color: var(--color_btn_text);
     cursor: pointer;
 }
 
-.company-fluid .company .row .col-6 .btn1{
+.company-fluid .company .row .col-xl-6 .btn1{
     margin-left: 50px;
+}
+
+@media screen and (max-width: 991px) {
+    .company-fluid .company .row .col-xl-6 h1{
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .company-fluid .company .row .col-xl-6 h1::before{
+        top: 44px;
+        right: 181px;
+    }
+
+    .company-fluid .company h3{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .company-fluid .company .row .col-xl-6 ul{
+        padding-left: 20px;
+        width: 269px;
+    }
+
+    .company-fluid .company .row .col-xl-6 ul li{
+        line-height: 28px;
+    }
+
+    .company-fluid{
+        background-image: url(../../images/Bg1.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: #f4f6fa;
+    }
+
+    .company-fluid .company{
+        background-image: none;
+    }
+
+    .order_mobile{
+        height: 50px;
+        filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+        background-color: #caddea;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .order_mobile::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid var(--color_btn_send_message_hover);
+        border-right: 20px solid transparent;
+        position: absolute;
+        top: 49px;
+        left: 0px;
+    }
+
+    .order_mobile p{
+        font-size: 22px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #075da2;
+        font-weight: 400;
+        font-family: Roboto_Medium;
+    }
+
+    .order_mobile span{
+        font-size: 35px;
+        color: #dd0000;
+    }
+
+    .company-fluid .company .row .col-xl-6 .btn{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .company-fluid .company .row .col-xl-6 h1::before{
+        right: 92px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .company-fluid .company .row .col-xl-6 h1::before{
+        right: 108.5px;
+    }
 }
