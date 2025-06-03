@@ -165,3 +165,9 @@ label {
         color: #dd0000;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .get-fluid .get .box .order::after{
+        display: none;
+    }
+}

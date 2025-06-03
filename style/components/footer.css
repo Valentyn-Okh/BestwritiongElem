@@ -131,3 +131,30 @@ footer .foot .end{
         right: 95px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    footer .foot .hmob a{
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: Roboto_Medium;
+    }
+
+    footer .foot .end{
+        text-align: start;
+    }
+
+    footer .foot .end span {
+        margin-left: 10px;
+    }
+
+    footer .foot .end::after{
+        content: "";
+        border: 1px solid #fff;
+        border-radius: 3px;
+        position: relative;
+        right: 95px;
+    }
+}

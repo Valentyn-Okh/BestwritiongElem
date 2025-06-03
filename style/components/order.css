@@ -75,3 +75,13 @@
         left: 0px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .order-fluid .order h2{
+        height: 80px;
+    }
+
+    .order-fluid .order h2::before{
+        top: 80px;
+    }
+}
